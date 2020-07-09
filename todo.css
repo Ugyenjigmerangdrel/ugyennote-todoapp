@@ -8,7 +8,6 @@ body{
     background: linear-gradient(120deg, #c22feb, #faa2d7);
     color: rgba(255, 255, 255, .75);
     font-family: 'Oswald';
-    letter-spacing: 3px;
     height: 92vh;
 }
 header{
