@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, #c22feb, #faa2d7);
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Oswald';
+    letter-spacing: 3px;
+    height: 92vh;
+}
+header{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    justify-content: center;
+    
+}
+header img{
+    justify-content: center;
+    padding: 2rem;
+}
+header h1{
+
+    padding: 2rem;
+    text-align: center;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+
+form input, form button{
+    padding: 0.8rem ;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    outline: none;
+    font-family: 'Oswald';
+    
+}
+
+
+form button{
+    color: #c22feb;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form button:hover{
+    background: #c22feb;
+    color: white;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+
+}
+
+.todo{
+    margin: 1.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo-item{
+    flex: 1;
+    padding: 0rem 0.5rem;
+}
+
+.todo-done, .todo-trash{
+    background: #1fffbc;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.todo-done:hover{
+    background: #c22feb;
+    color: white;
+}
+
+.todo-trash{
+    background: #eb2f2f;
+    color: white;
+}
+
+.fa-trash, .fa-check{
+    cursor: none;
+}
+
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
